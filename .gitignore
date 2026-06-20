@@ -1,0 +1,21 @@
+# Secrets
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# Virtualenv
+.venv/
+venv/
+
+# Generated data (built by crawler/mfc_crawler.py)
+data/
+
+# Build artifacts
+.ppt_build/
+
+# macOS
+.DS_Store

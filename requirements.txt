@@ -1,0 +1,26 @@
+# Web
+fastapi>=0.110
+uvicorn[standard]>=0.27
+python-multipart>=0.0.9
+python-dotenv>=1.0
+
+# HTTP / crawling
+httpx>=0.27
+beautifulsoup4>=4.12
+lxml>=5.0
+
+# ML / vision
+torch>=2.3                          # MPS-enabled on Apple Silicon
+transformers>=4.40
+Pillow>=10.0
+numpy>=1.26
+rembg>=2.0                          # background removal
+onnxruntime>=1.17                   # rembg backend
+
+# Vector DB
+sqlite-vec>=0.1.6
+# Fallback if system sqlite3 has no load_extension:
+pysqlite3-binary>=0.5.2 ; sys_platform != "darwin"
+
+# LLM reranking
+google-generativeai>=0.7
