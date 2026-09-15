@@ -6,6 +6,8 @@ Apple Silicon용 로컬 데스크톱 앱입니다. 외부 배포용이 아닙니
 
 [English README](README.md)
 
+[시연영상](https://youtu.be/vsqRjZAaQkg?si=8zVv9UcQYjNqWKQQ)
+
 <p align="center">
   <img src="docs/screenshots/01-upload.png" width="360" alt="업로드 화면" />
   &nbsp;
