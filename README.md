@@ -68,11 +68,16 @@ Useful crawl flags: `--refresh`, `--refresh-existing`, `--seeds URL...`
 
 ## How it works
 
-```
-photo → rembg → DINOv2-large (MPS) → sqlite-vec top-K
-      → optional Gemini re-rank
-      → on miss: Gemini + Google Search
-      → MSRP + partner quotes → KRW
+```mermaid
+flowchart LR
+  A[Photo] --> B[rembg]
+  B --> C[DINOv2 · MPS]
+  C --> D[sqlite-vec top-K]
+  D --> E{Match?}
+  E -->|yes| F[Gemini re-rank<br/>optional]
+  E -->|miss| G[Gemini + Google Search]
+  F --> H[MSRP + quotes → KRW]
+  G --> H
 ```
 
 Stack: **PySide6 GUI** · **DINOv2** · **sqlite-vec** · **Gemini** · **MFC crawl**

@@ -68,11 +68,16 @@ python -m embeddings.build_index                # ~12k 기준 MPS에서 약 1시
 
 ## 동작 흐름
 
-```
-사진 → rembg → DINOv2-large (MPS) → sqlite-vec top-K
-     → (선택) Gemini 재랭크
-     → 실패 시: Gemini + Google Search
-     → 정가 + 파트너 호가 → KRW
+```mermaid
+flowchart LR
+  A[사진] --> B[rembg]
+  B --> C[DINOv2 · MPS]
+  C --> D[sqlite-vec top-K]
+  D --> E{매칭?}
+  E -->|성공| F[Gemini 재랭크<br/>선택]
+  E -->|실패| G[Gemini + Google Search]
+  F --> H[정가 + 호가 → KRW]
+  G --> H
 ```
 
 스택: **PySide6 GUI** · **DINOv2** · **sqlite-vec** · **Gemini** · **MFC 크롤**
