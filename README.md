@@ -1,5 +1,7 @@
 # Figure Price Analyzer
 
+시연 영상 : https://youtu.be/vsqRjZAaQkg?si=t3-4_uBBwtopFGyn
+
 피규어 사진 한 장 → **어떤 피규어인지** + **정가/시장가 비교**.
 
 로컬 전용 도구입니다. 외부 배포 안 함, MacBook M-series에서 동작 검증.
