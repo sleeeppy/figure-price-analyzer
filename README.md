@@ -6,6 +6,7 @@ Local desktop app for Apple Silicon. Not for public deployment.
 
 [한국어](README.ko.md)
 
+https://youtu.be/vsqRjZAaQkg?si=8zVv9UcQYjNqWKQQ
 <p align="center">
   <img src="docs/screenshots/01-upload.png" width="360" alt="Upload screen" />
   &nbsp;
