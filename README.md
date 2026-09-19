@@ -1,6 +1,6 @@
 # FigurePrice
 
-**One photo → figure ID + MSRP / market prices.**
+**One photo → figure ID + MSRP / Market prices.**
 
 Local desktop app for Apple Silicon. Not for public deployment.
 
