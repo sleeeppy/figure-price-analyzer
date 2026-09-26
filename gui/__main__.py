@@ -27,11 +27,12 @@ def main() -> int:
     palette.setColor(QPalette.Button, QColor(theme.SURFACE_2))
     palette.setColor(QPalette.ButtonText, QColor(theme.INK))
     palette.setColor(QPalette.Highlight, QColor(theme.PRIMARY))
-    palette.setColor(QPalette.HighlightedText, QColor("#000000"))
+    palette.setColor(QPalette.HighlightedText, QColor("#0a0a0b"))
     palette.setColor(QPalette.ToolTipBase, QColor(theme.SURFACE_3))
     palette.setColor(QPalette.ToolTipText, QColor(theme.INK))
     app.setPalette(palette)
 
+    # Soft dark chrome; window body itself is the rounded #appShell.
     app.setStyleSheet(theme.STYLESHEET)
 
     window = MainWindow()

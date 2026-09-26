@@ -75,7 +75,9 @@ class ResultView(QWidget):
             row.setSpacing(12)
             preview = QLabel()
             preview.setFixedSize(72, 72)
-            preview.setStyleSheet(f"background-color: {theme.SURFACE_2}; border-radius: 12px;")
+            preview.setStyleSheet(
+                f"background-color: {theme.SURFACE_2}; border-radius: {theme.RADIUS_CONTROL}px;"
+            )
             pm = QPixmap()
             pm.loadFromData(preview_bytes)
             if not pm.isNull():
@@ -153,7 +155,7 @@ class ResultView(QWidget):
             # empty chart canvas; explain why.
             empty = QFrame()
             empty.setStyleSheet(
-                f"background-color: {theme.SURFACE_2}; border-radius: 12px;"
+                f"background-color: {theme.SURFACE_2}; border-radius: {theme.RADIUS_CONTROL}px;"
             )
             ev = QVBoxLayout(empty)
             ev.setContentsMargins(16, 18, 16, 18)

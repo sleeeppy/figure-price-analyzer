@@ -100,7 +100,7 @@ class ToggleSwitch(QWidget):
         p.setBrush(track_color)
         p.drawRoundedRect(self.rect(), self.TRACK_H / 2, self.TRACK_H / 2)
         # Knob
-        knob_color = QColor("#000000") if self._checked else QColor(theme.INK)
+        knob_color = QColor("#ffffff") if self._checked else QColor(theme.INK)
         p.setBrush(knob_color)
         cx = int(self._knob_x)
         cy = self.TRACK_H // 2

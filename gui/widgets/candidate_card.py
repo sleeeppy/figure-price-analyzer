@@ -65,7 +65,9 @@ class CandidateCard(QFrame):
         img = QLabel()
         img.setFixedSize(160 if hero else 88, 160 if hero else 88)
         img.setAlignment(Qt.AlignmentFlag.AlignCenter)
-        img.setStyleSheet(f"background-color: {theme.SURFACE_2}; border-radius: 12px;")
+        img.setStyleSheet(
+            f"background-color: {theme.SURFACE_2}; border-radius: {theme.RADIUS_CONTROL}px;"
+        )
         if c.image_paths:
             path = c.image_paths[0]
             if Path(path).exists():

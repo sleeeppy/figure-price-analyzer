@@ -224,7 +224,7 @@ class GeminiResultCard(QFrame):
         img_label.setFixedHeight(220)
         img_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
         img_label.setStyleSheet(
-            f"background-color: {theme.SURFACE_2}; border-radius: 12px;"
+            f"background-color: {theme.SURFACE_2}; border-radius: {theme.RADIUS_CONTROL}px;"
         )
         img_label.setText("🖼️  이미지 미리보기 없음")
         if c.image_url:
@@ -267,7 +267,7 @@ class GeminiResultCard(QFrame):
             reason.setWordWrap(True)
             reason.setStyleSheet(
                 f"background-color: {theme.SURFACE_2}; "
-                f"border-radius: 12px; padding: 8px;"
+                f"border-radius: {theme.RADIUS_CONTROL}px; padding: 8px;"
             )
             v.addWidget(reason)
 
@@ -294,7 +294,9 @@ class GeminiResultCard(QFrame):
         card = QFrame()
         card.setProperty("class", "card")
         card.setStyleSheet(
-            f"QFrame[class=\"card\"] {{ background-color: {theme.SURFACE_1}; border-radius: 8px; }}"
+            f"QFrame[class=\"card\"] {{ background-color: {theme.SURFACE_1}; "
+            f"border: 1px solid rgba(255,255,255,0.08); "
+            f"border-radius: {theme.RADIUS_CARD}px; }}"
         )
         layout = QVBoxLayout(card)
         layout.setContentsMargins(14, 12, 14, 12)
@@ -334,7 +336,7 @@ class GeminiResultCard(QFrame):
             # Empty state — same Spotify treatment as the main result view.
             empty = QFrame()
             empty.setStyleSheet(
-                f"background-color: {theme.SURFACE_2}; border-radius: 12px;"
+                f"background-color: {theme.SURFACE_2}; border-radius: {theme.RADIUS_CONTROL}px;"
             )
             ev = QVBoxLayout(empty)
             ev.setContentsMargins(16, 18, 16, 18)
