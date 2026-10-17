@@ -1,10 +1,12 @@
-# FigurePrice
+# FigurePrice 
+
+[한국어](README.ko.md)
 
 **One photo → figure ID + MSRP / Market prices.**
 
 Local desktop app for Apple Silicon. Not for public deployment.
 
-[한국어](README.ko.md)
+
 
 [Video](https://youtu.be/vsqRjZAaQkg?si=8zVv9UcQYjNqWKQQ)
 
